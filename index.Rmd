@@ -27,4 +27,3 @@ You can also embed images, here's a picture of Mister Seal!
 
 ![](images/misterseal.jpg)
 
-Testing
