@@ -1,0 +1,30 @@
+---
+title: "Jake's Fabulous Website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# This is Jake's awesome website
+
+![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+
+
+Can still do all usual things in RMD.
+
+Can add text.
+
+This website is an example from [P8105](https://p8105.com/making_websites.html), we're making websites today.
+
+Learn more about this site [here](about.html)
+
+I also use [google a lot](https://www.google.com/) for completing data science tasks.
+
+To show that you can just use RMD like normal, check out [this page](plots.html) with plots
+
+You can also embed images, here's a picture of Mister Seal!
+
+![](images/misterseal.jpg)
+
+Testing

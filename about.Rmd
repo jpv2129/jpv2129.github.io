@@ -1,0 +1,10 @@
+---
+title: "About this website"
+output: 
+  html_document:
+    theme: cosmo
+---
+
+This website was created and coded by Jake Vettoretti.
+
+Get back to home page by clicking [here](index.html)
