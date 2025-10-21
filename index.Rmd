@@ -23,9 +23,9 @@ I also use [google a lot](https://www.google.com/) for completing data science t
 
 To show that you can just use RMD like normal, check out [this page](plots.html) with plots
 
+You can learn how to use plotly [here](plotly.html)
+
 You can also embed images, here's a picture of Mister Seal!
 
 ![](images/misterseal.jpg)
 
-
-You can learn how to use plotly [here](plotly.html)

@@ -48,5 +48,18 @@ nyc_airbnb |>  #learning plotly code
   )
 ```
 
+Let's make a boxplot
+```{r}
+nyc_airbnb |> 
+  mutate(
+    neighbourhood = fct_reorder(neighbourhood, price)
+  ) |> 
+  plot_ly(
+    x= ~neighbourhood, y = ~price, color = ~neighbourhood,
+    type = "box"
+  )
+```
+
+
 
 
