@@ -10,10 +10,7 @@ output:
 
 ![](images/Jake.jpg)
 
-
-Can still do all usual things in RMD.
-
-Can add text.
+That's me in Berlin.
 
 This website is for my [P8105](https://p8105.com/making_websites.html) class.
 

@@ -1,9 +1,0 @@
----
-title: "Jake's Resume"
-author: "Jake Vettoretti"
-date: "2025-10-27"
-output: word_document:
-  reference_docx: docx/Resume.docx
----
-
-
