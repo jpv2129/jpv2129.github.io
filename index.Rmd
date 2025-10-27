@@ -6,21 +6,33 @@ output:
     toc_float: true
 ---
 
+---
+
 # Welcome to my site
+
+---
 
 ![](images/Jake.jpg)
 
-That's me in Berlin.
+---
 
 This website is for my [P8105](https://p8105.com/making_websites.html) class.
 
-Learn more about Jake [here](about.html)
+---
 
-To show that you can just use RMD like normal, check out [this page](plots.html) with plots
+## Learn more about my professional and academic experience [here](about.html).
 
-You can learn how to use plotly [here](plotly.html)
+---
 
-You can also embed images, here's a picture of Mister Seal!
+## Check out some basic plotting [here](plots.html).
+
+---
+
+## Check out dashboard of plots [here](plotly.html)!
+
+---
+
+## For fun, here's a picture of Mister Seal!
 
 ![](images/misterseal.jpg)
 

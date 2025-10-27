@@ -5,16 +5,36 @@ output:
     theme: cosmo
 ---
 
+---
+
 ![](images/headshot.jpg)
 
+---
+
+# Academic Experience 
+
+---
+
+## Columbia University, New York, NY             	                         
+### Expected Graduation: May 2026
+### Master of Public Health in Epidemiology
+### GPA: 4.05
+### Honors: Public Health Merit Scholar	
 
 
-# Academic Experience
 
+## Lehigh University, Bethlehem, PA             	                         May 2024
+### Bachelor of Science in Population Health
+### Major: Population Health ∙ Minor: Indigenous Peoples Health 
+### GPA: 3.75
+### Honors: Magna Cum Laude, Dean’s List (2021- 2024)
 
-
+---
 
 # Professional Experience
+
+---
+
 
 
 
