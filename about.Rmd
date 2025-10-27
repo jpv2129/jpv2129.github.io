@@ -1,10 +1,15 @@
 ---
-title: "About this website"
+title: "About Jake Vettoretti"
 output: 
   html_document:
     theme: cosmo
 ---
 
-This website was created and coded by Jake Vettoretti.
+![](images/headshot.jpg)
+
+# Below you can find my resume denoting my academic and professional experience!
+
+
+
 
 Get back to home page by clicking [here](index.html)

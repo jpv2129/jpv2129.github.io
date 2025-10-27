@@ -1,25 +1,23 @@
 ---
-title: "Jake's Fabulous Website"
+title: "Jake's Website"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-# This is Jake's awesome website
+# Welcome to my site
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+![](images/Jake.jpg)
 
 
 Can still do all usual things in RMD.
 
 Can add text.
 
-This website is an example from [P8105](https://p8105.com/making_websites.html), we're making websites today.
+This website is for my [P8105](https://p8105.com/making_websites.html) class.
 
-Learn more about this site [here](about.html)
-
-I also use [google a lot](https://www.google.com/) for completing data science tasks.
+Learn more about Jake [here](about.html)
 
 To show that you can just use RMD like normal, check out [this page](plots.html) with plots
 
