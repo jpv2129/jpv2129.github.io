@@ -4,6 +4,7 @@ output:
   html_document:
     toc: true
     toc_float: true
+    theme: cosmo
 ---
 
 ---
@@ -30,7 +31,11 @@ This website is for my [P8105](https://p8105.com/making_websites.html) class.
 
 ---
 
-## Check out a dashboard of plots made from NY NOAA data [here](plotly.html)!
+## Check out a dashboard of plots made from NY NOAA data [here](noaadashboard.html)!
+
+---
+
+## Learn how to use plotly [here](plotly.html)
 
 ---
 

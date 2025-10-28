@@ -3,18 +3,17 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "About"
+    - text: "About Jake"
       href: about.html
     - text: "Plotly"
       href: plotly.html
     - text: "Plots"
       href: plots.html
-    - text: "Dashboard"
-      href: dashboard.html
+    - text: "NY NOAA Data Flexdashboard"
+      href: noaadashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:jakevett@gmail.com
     - icon: fa-github fa-lg
       href: http://github.com/jpv2129/
-output:
-  html_document:
-    theme: cosmo
+    - text: "LinkedIn"
+      href: https://www.linkedin.com/in/jake-vettoretti-4a9b99243/

@@ -1,8 +1,8 @@
 ---
 title: "Here are some plotly plots"
-author: "Jake Vettoretti"
-date: "2025-10-21"
-output: html_document
+output: 
+  html_document:
+    theme: cosmo
 ---
 
 # Interactivity is great

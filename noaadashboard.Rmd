@@ -1,0 +1,103 @@
+---
+title: "NY NOAA Data Flexdashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    theme: cosmo
+---
+
+```{r setup}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+
+```{r}
+data("ny_noaa")
+
+noaa = ny_noaa |>
+  mutate(
+    year = year(date),
+    month = month(date, label = TRUE),
+    tmax = as.numeric(tmax) / 10, # convert to °C
+    tmin = as.numeric(tmin) / 10, # convert to °C
+    prcp = as.numeric(prcp) / 10  # convert to mm
+  )
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+noaa |>
+  drop_na(tmax, tmin, prcp) |>
+  mutate(
+  temp_range = tmax - tmin
+) |>
+  sample_n(4000) |>
+  plot_ly(
+    x = ~temp_range,
+    y = ~prcp,
+    color = ~month,
+    type = "scatter",
+    mode = "markers",
+    alpha = 0.6
+  ) |>
+      layout(
+          title = "Daily Temperature Range vs. Precipitation",
+          xaxis = list(title = "Temperature Range (°C)"),
+          yaxis = list(title = "Precipitation (mm)")
+      )
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+noaa |>
+  drop_na(prcp) |>
+  group_by(month) |>
+  summarise(mean_prcp = mean(prcp, na.rm = TRUE)) |>
+  mutate(month = fct_reorder(month, mean_prcp)) |>
+  plot_ly(
+    x = ~month,
+    y = ~mean_prcp,
+    type = "bar",
+    marker = list(color = "skyblue")
+  ) |>
+  layout(
+    title = "Average Monthly Precipitation (1981–2010)",
+    xaxis = list(title = "Month"),
+    yaxis = list(title = "Average Precipitation (mm)")
+  )
+```
+
+### Chart C
+
+```{r}
+noaa |>
+drop_na(tmax, tmin) |>
+  group_by(month) |>
+  summarise(
+    avg_tmax = mean(tmax, na.rm = TRUE),
+    avg_tmin = mean(tmin, na.rm = TRUE)
+  ) |>
+  plot_ly(x = ~month, y = ~avg_tmax, name = "Avg Max Temp (°C)",
+          type = "scatter", mode = "lines+markers",
+          line = list(color = "firebrick", width = 2)) |>
+  add_trace(y = ~avg_tmin, name = "Avg Min Temp (°C)",
+            mode = "lines+markers",
+            line = list(color = "steelblue", width = 2)) |>
+  layout(
+    title = "Average Monthly Temperatures in New York (1981–2010)",
+    xaxis = list(title = "Month"),
+    yaxis = list(title = "Temperature (°C)"),
+    legend = list(orientation = "h", x = 0.3, y = -0.3)
+  )
+```
