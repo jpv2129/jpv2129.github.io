@@ -12,7 +12,9 @@ output:
 
 ---
 
-![](images/Jake.jpg)
+<div style="text-align: center;">
+  <img src="images/Jake.jpg" width="250">
+</div>
 
 ---
 
@@ -28,11 +30,13 @@ This website is for my [P8105](https://p8105.com/making_websites.html) class.
 
 ---
 
-## Check out dashboard of plots [here](plotly.html)!
+## Check out a dashboard of plots made from NY NOAA data [here](plotly.html)!
 
 ---
 
 ## For fun, here's a picture of Mister Seal!
 
-![](images/misterseal.jpg)
+<div style="text-align: center;">
+  <img src="images/misterseal.jpg" width="250">
+</div>
 
